@@ -1,0 +1,1 @@
+(()=>{let d=document.createElement("div");d.classList.add("box"),document.body.appendChild(d)})();
