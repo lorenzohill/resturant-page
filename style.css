@@ -1,5 +1,48 @@
+*{margin: 0;}
+
 .box{
   background-color: #282C34;
   height: 100px;
   width: 100px;
+}
+
+header{
+  background-color: steelblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+}
+
+h1{
+  text-align: center;
+  font-size: 48pt;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  background-color: beige;
+  border-radius: 5px;
+  box-shadow: 3px 3px #A7A78F;
+  margin-right: 5px;
+  height: 3rem;
+  width: 4rem;
+}
+
+button:hover{
+  background-color: #a7a78f;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 600px) {
+  header{
+    height: 35vh;
+  }
 }
