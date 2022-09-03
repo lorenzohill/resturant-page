@@ -45,69 +45,20 @@ button:hover{
   box-shadow: none;
 }
 
-.pgcontent{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-
 .burger{
   align-items: center;
   background-color: tan;
-  border-radius: 30px;
+  border-radius: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 20px;
   padding: 6px;
-  height: auto;
-  width: 60%;
-}
-
-.burger>p{
-  padding: 8px;
-}
-
-.form{
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  background-color: #D2B48C;
-  border-radius: 30px;
-  width: 50vw;
-  height:25vh;
-}
-
-.contentbox{
-  align-items: center;
-  background-color: tan;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 20px;
-  padding: 16px;
-  height: auto;
-  width: 60%;
-}
-
-.price{
-  position: relative;
-  bottom: 82px;
-  left: 10.5em;
-  font-weight: bold;
-  text-decoration: underline;
+  height: 70%;
+  width: 70%;
 }
 
 @media screen and (max-width: 600px) {
   header{
     height: 35vh;
-  }
-
-  .price{
-    position: static;
-
   }
 }
