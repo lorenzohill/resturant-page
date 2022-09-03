@@ -95,7 +95,7 @@ function createHome() {
 
   let content = document.createElement("div")
   content.classList.add("pgcontent")
-  content.innerHTML = '<div class="contentbox"><h1>Dougs Famous Burgers</h1><p>Come to the best burger shop in all of alaska. Home of the worlds most famous burgers. Our Hours are 9am-11pm everyday. When you want bugers. You know where to go.</p></div>'
+  content.innerHTML = '<div class="contentbox"><h1>Doug&#x27s Famous Burgers</h1><p>Come to the best burger shop in all of alaska. Home of the world&#x27s most famous burgers. Our Hours are 9am-11pm everyday. When you want bugers, you know where to go.</p></div>'
   document.body.appendChild(content)
 }
 
