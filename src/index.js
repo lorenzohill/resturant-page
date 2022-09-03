@@ -2,7 +2,7 @@ var header = document.createElement("header")
 var nav = document.createElement("nav")
 
 var resturantName = document.createElement("h1")
-resturantName.innerHTML = "Doug's Burger Shop"
+resturantName.innerText = "Doug's Burger Shop"
 
 
 const burger1 = {
@@ -72,15 +72,15 @@ CreateNav()
 
 function CreateNav() {
   let home = document.createElement("button")
-  home.innerHTML = "Home"
+  home.innerText = "Home"
   home.addEventListener("click", function(){createHome()})
 
   let menu = document.createElement("button")
-  menu.innerHTML = "Menu"
+  menu.innerText = "Menu"
   menu.addEventListener("click", function(){createMenu()})
 
   let contactUs = document.createElement("button")
-  contactUs.innerHTML = "Contact Us"
+  contactUs.innerText = "Contact Us"
   contactUs.addEventListener("click", function(){createContactUs()})
 
   var list = document.createElement("li")
@@ -95,7 +95,19 @@ function createHome() {
 
   let content = document.createElement("div")
   content.classList.add("pgcontent")
-  content.innerHTML = '<div class="contentbox"><h1>Doug&#x27s Famous Burgers</h1><p>Come to the best burger shop in all of alaska. Home of the world&#x27s most famous burgers. Our Hours are 9am-11pm everyday. When you want bugers, you know where to go.</p></div>'
+
+  let contentbox = document.createElement("div")
+  contentbox.classList.add("contentbox")
+  let header = document.createElement("h1")
+  header.innerText = "Doug's Famous Burgers"
+  let para = document.createElement("p")
+  para.innerText = "Come to the best burger shop in all of alaska. Home of the world's most famous burgers. Our Hours are 9am-11pm everyday. When you want bugers, you know where to go."
+
+  contentbox.appendChild(header)
+  contentbox.appendChild(para)
+
+content.appendChild(contentbox)
+
   document.body.appendChild(content)
 }
 
@@ -115,10 +127,10 @@ function createMenu() {
     container.classList.add("burger")
     price.classList.add("price")
 
-    name.innerHTML = element.name
-    tagLn.innerHTML = element.tag
-    desc.innerHTML = element.desc
-    price.innerHTML = element.price
+    name.innerText = element.name
+    tagLn.innerText = element.tag
+    desc.innerText = element.desc
+    price.innerText = element.price
 
     container.appendChild(name)
     container.appendChild(tagLn)
@@ -136,14 +148,25 @@ function createContactUs() {
 
   let content = document.createElement("div")
   content.classList.add("pgcontent")
-  content.innerHTML = "Here is how you contact us!"
+  content.innerText = "Here is how you contact us!"
   let form = document.createElement("div")
   form.classList.add("form")
 
-  form.innerHTML = '<label>Name</label><input type="text"><label for="txt">Message for Us</label><textarea rows="5" cols="60" name="text" placeholder="Enter text"></textarea>'
+  let nameLabel = document.createElement("label")
+  nameLabel.innerText = "Name"
+  let nameInput = document.createElement("input")
+  nameInput.type = "Text"
+  let msgLabel = document.createElement("label")
+  msgLabel.innerText = "Message for Us"
+  let msgInput = document.createElement("textarea")
+
+  form.appendChild(nameLabel)
+  form.appendChild(nameInput)
+  form.appendChild(msgLabel)
+  form.appendChild(msgInput)
   
 let sendBtn = document.createElement("button")
-sendBtn.innerHTML = "Send"
+sendBtn.innerText = "Send"
 sendBtn.style.alignSelf = "center"
 sendBtn.style.marginTop = "10px"
   form.appendChild(sendBtn)
