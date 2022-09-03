@@ -101,7 +101,7 @@ function createHome() {
   let header = document.createElement("h1")
   header.innerText = "Doug's Famous Burgers"
   let para = document.createElement("p")
-  para.innerText = "Come to the best burger shop in all of alaska. Home of the world's most famous burgers. Our Hours are 9am-11pm everyday. When you want bugers, you know where to go."
+  para.innerText = "Come to the best burger shop in all of alaska. Home of the worldn's most famous burgers. Our Hours are 9am-11pm everyday. When you want bugers, you know where to go."
 
   contentbox.appendChild(header)
   contentbox.appendChild(para)
